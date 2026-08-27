@@ -10,7 +10,7 @@ const PORT = Number(process.env.PORT || 3000);
 const ADMIN_USER = process.env.ADMIN_USER || "admin";
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "troque-esta-senha";
 const JWT_SECRET = process.env.JWT_SECRET || "troque-esta-chave-secreta";
-const PIX_KEY = process.env.PIX_KEY || "02326770692";
+const PIX_KEY = process.env.PIX_KEY || "11058280694";
 const DATABASE_URL = process.env.DATABASE_URL;
 
 if (!DATABASE_URL) {
