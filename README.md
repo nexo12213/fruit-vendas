@@ -8,7 +8,7 @@ Versão preparada para publicação usando GitHub + Render pelo celular.
 - Produtos com imagens incorporadas
 - Carrinho
 - Pagamento somente via PIX
-- Chave PIX configurada: `02326770692`
+- Chave PIX configurada: `11058280694`
 - Pedido salvo em PostgreSQL
 - Painel administrativo
 - Login administrativo por sessão HTTP-only
