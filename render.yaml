@@ -20,7 +20,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: PIX_KEY
-        value: "02326770692"
+        value: "11058280694"
 
 databases:
   - name: nexo-vendas-db
