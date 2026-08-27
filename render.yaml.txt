@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: nexo-vendas
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: nexo-vendas-db
+          property: connectionString
+      - key: ADMIN_USER
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PIX_KEY
+        value: "02326770692"
+
+databases:
+  - name: nexo-vendas-db
+    databaseName: nexo_vendas
+    user: nexo_vendas
+    plan: free
